@@ -79,8 +79,7 @@ secrets.toml
 # --------------------------------------------------------------------
 # Data Files, Artifacts, and Logs
 # --------------------------------------------------------------------
-*.pkl # Pickle files (large model files)
-artifacts/*.pkl
+
 *.csv
 *.zip
 *.tar.gz
