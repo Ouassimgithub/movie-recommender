@@ -1,0 +1,144 @@
+# ====================================================================
+# PROJECT-SPECIFIC IGNORES (COMBINED & OPTIMIZED)
+# ====================================================================
+
+# --------------------------------------------------------------------
+# Byte-compiled / Optimized / DLL files
+# --------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --------------------------------------------------------------------
+# Virtual Environment
+# --------------------------------------------------------------------
+# Ignore common environment folder names
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version # pyenv
+__pypackages__/ # PEP 582/pyflow
+
+# --------------------------------------------------------------------
+# Distribution / Packaging / Build
+# --------------------------------------------------------------------
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+target/ # PyBuilder
+
+# --------------------------------------------------------------------
+# Installer logs
+# --------------------------------------------------------------------
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --------------------------------------------------------------------
+# IDE & Project Settings (VS Code, PyCharm, Spyder, Rope)
+# --------------------------------------------------------------------
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+*.swp
+*.swo
+
+# --------------------------------------------------------------------
+# API Keys, Secrets, and Sensitive Config (CRITICAL)
+# --------------------------------------------------------------------
+# DO NOT commit these files! They contain credentials/secrets.
+config.py
+local_settings.py
+configs/secrets.yaml
+secrets.toml
+# Streamlit-specific secrets file
+.streamlit/secrets.toml
+
+# --------------------------------------------------------------------
+# Data Files, Artifacts, and Logs
+# --------------------------------------------------------------------
+*.pkl # Pickle files (large model files)
+artifacts/*.pkl
+*.csv
+*.zip
+*.tar.gz
+*.log # Django stuff
+db.sqlite3 # Django stuff
+db.sqlite3-journal # Django stuff
+
+# --------------------------------------------------------------------
+# Test / Coverage / Type Checking Reports
+# --------------------------------------------------------------------
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/ # mypy
+.dmypy.json
+dmypy.json
+.pyre/ # Pyre
+
+# --------------------------------------------------------------------
+# Notebooks / IPython
+# --------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+profile_default/
+ipython_config.py
+
+# --------------------------------------------------------------------
+# Framework-Specific Ignores
+# --------------------------------------------------------------------
+# Flask
+instance/
+.webassets-cache
+# Scrapy
+.scrapy
+# Sphinx / mkdocs documentation
+docs/_build/
+/site
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# --------------------------------------------------------------------
+# OS & Other Temp Files
+# --------------------------------------------------------------------
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+*.manifest # PyInstaller
+*.spec # PyInstaller
+*.mo # Translations
+*.pot # Translations
+*.sage.py # SageMath parsed files
