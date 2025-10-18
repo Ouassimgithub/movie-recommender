@@ -26,7 +26,9 @@ def recommend(movie):
     return recommanded_movie_name,recommanded_movie_poster
 
 
-st.header("Movie Recommender System Machine learnin")
+st.title("🎬 Discover Movies You'll Love")
+st.subheader("AI-powered recommendations in seconds")
+
 is_cloud = os.path.exists("/mount/src")
 if is_cloud:
     # Running on Streamlit Cloud (has new pickles)
@@ -39,7 +41,7 @@ else:
 
 movie_list = movies["title"].values
 selected_movie = st.selectbox(
-    "Type or select a movie to get recommandation",
+    "Which movie did you enjoy?",
     movie_list
 )
 # env/python -m streamlit run app.py
