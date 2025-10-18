@@ -1,8 +1,9 @@
-streamlit
-requests
-pandas
-numpy
 #streamlit
+#requests
+#pandas
+#numpy
+streamlit
 # local package
-#-e .
+-e .
+
 
