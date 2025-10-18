@@ -1,3 +1,4 @@
+import os
 import pickle
 import streamlit as st
 import requests
@@ -26,9 +27,16 @@ def recommend(movie):
 
 
 st.header("Movie Recommender System Machine learnin")
+is_cloud = os.path.exists("/mount/src")
+if is_cloud:
+    # Running on Streamlit Cloud (has new pickles)
+    movies = pickle.load(open("artifacts/movie_list_new.pkl", "rb"))
+    similarity = pickle.load(open("artifacts/similarity_new.pkl", "rb"))
+else:
+    # Running locally (has old pickles)
+    movies = pickle.load(open("artifacts/movie_list.pkl", "rb"))
+    similarity = pickle.load(open("artifacts/similarity.pkl", "rb"))
 
-movies = pickle.load(open("artifacts/movie_list.pkl","rb"))
-similarity = pickle.load(open("artifacts/similarity.pkl","rb"))
 movie_list = movies["title"].values
 selected_movie = st.selectbox(
     "Type or select a movie to get recommandation",

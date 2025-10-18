@@ -79,7 +79,14 @@ secrets.toml
 # --------------------------------------------------------------------
 # Data Files, Artifacts, and Logs
 # --------------------------------------------------------------------
+# Ignore old pickle files (for local use only)
+artifacts/movie_list.pkl
+artifacts/similarity.pkl
 
+# Allow new pickle files (for cloud deployment)
+!artifacts/movie_list_new.pkl
+!artifacts/similarity_new.pkl
+ git add .gitattributes
 *.csv
 *.zip
 *.tar.gz
