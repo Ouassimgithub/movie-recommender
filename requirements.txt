@@ -2,10 +2,3 @@ streamlit
 requests
 pandas
 numpy
-#streamlit
-# local package
-
-streamlit
-requests
-pandas
-numpy
